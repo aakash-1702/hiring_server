@@ -1,0 +1,9 @@
+WriteHeader() : takes an integer value
+WriteHeader(http.StatusOK)
+
+** work of WriteHeader is to send the headers 
+now after this line , no more headers could be set
+
+WriteHeader() -> w.Header().Set() ** anti pattern , can't be set this way
+
+w.Header().Set()
